@@ -64,6 +64,7 @@ const NavBar = () => {
 
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative
+    z-10 lg:px-16 md:px-12 sm:px-8
      ">
       <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
         <span className={`bg-dark  dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-1':'-translate-y-0.5'}`}></span>
@@ -121,7 +122,10 @@ const NavBar = () => {
    </div>
    {
     isOpen?
-    <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 
+    <motion.div 
+    initial={{scale:0,opacity:0,x:"-50",y:"-50%"}}
+    animate={{scale:1,opacity:1}}
+    className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 
    -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32">
    <nav className="flex items-center flex-col justify-center">
         <CustomMobileLink href="/" title="Home" className="" toggle={handleClick}/>
@@ -130,11 +134,11 @@ const NavBar = () => {
         <CustomMobileLink href="/articles" title="Articles" className="" toggle={handleClick}/>
       </nav>
 
-      <nav className="flex items-center justify-center flex-wrap">
+      <nav className="flex items-center justify-center flex-wrap mt-2">
         <motion.a href="https://twitter.com/Dharmen895" target={"_blank"}
         whileHover={{y:-2}}
         whileTap={{scale:0.9}}
-        className="w-6 mr-3 "
+        className="w-6 mr-3 sm:mx-1 "
         >
             <TwitterIcon />
         </motion.a>
@@ -142,14 +146,14 @@ const NavBar = () => {
         <motion.a href="https://github.com/Dharmen895" target={"_blank"}
         whileHover={{y:-2}}
         whileTap={{scale:0.9}}
-        className="w-6 mx-3 bg-light rounded-full dark:bg-dark"
+        className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1 "
         >
             <GithubIcon/>
         </motion.a>
         <motion.a href="https://www.linkedin.com/in/dharmen895/" target={"_blank"}
         whileHover={{y:-2}}
         whileTap={{scale:0.9}}
-        className="w-6 ml-3"
+        className="w-6 ml-3 sm:mx-1 "
         >
             <LinkedInIcon />
         </motion.a>
@@ -169,11 +173,11 @@ const NavBar = () => {
 
       </button>
       </nav>
-   </div>
+   </motion.div>
     :null
    }
 
-      <div className="absolute left-[50%] z-30 top-2 translate-x-[-50%]">
+      <div className="absolute left-[50%]  top-2 translate-x-[-50%]">
         <Logo />
       </div>
     </header>

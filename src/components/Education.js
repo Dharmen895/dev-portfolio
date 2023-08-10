@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type,  place, info }) => {
   const ref = useRef(null);
   return (
     <li
@@ -18,7 +18,7 @@ const Details = ({ type, time, place, info }) => {
       >
         <h3 className="capitalize font-bold text-2xl">{type}</h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75">
-          {time} | {place}
+           {place}
         </span>
         <p className="font-medium w-full">{info}</p>
       </motion.div>
@@ -42,26 +42,20 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type=" Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
+            type=" B.Tech in Computer Science & Engineering"
+          
+            place="Lovely Professional University(LPU)"
             info=" Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence."
           />
-          <Details
-            type=" Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info=" Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+           <Details
+            type=" Diploma in Mechanical Engineering"
+            place="Lovely Professional University(LPU)"
+
+            info=" Relevant courses on foundational knowledge and practical skills for designing, manufacturing, and maintaining mechanical systems and machinery."
           />
-          <Details
-            type=" Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info=" Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
-          />
+         
+          
         </ul>
       </div>
     </div>
