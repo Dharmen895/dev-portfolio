@@ -16,7 +16,7 @@ module.exports = {
         dark: "#222831",
         light: "#EEEEEE",
         primary: "#00ADB5", // 240,86,199
-        primaryDark: "#393E46", // 80,230,217
+        primaryDark: "#00ADB5", // 80,230,217
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
@@ -26,6 +26,25 @@ module.exports = {
         circularDark:'repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #222831 8px, #222831 100px);'
 
       }
+    },
+    screens:{
+        "2xl": { max: "1535px" },
+        // => @media (max-width: 1535px) { ... }
+    
+        xl: { max: "1279px" },
+        // => @media (max-width: 1279px) { ... }
+    
+        lg: { max: "1023px" },
+        // => @media (max-width: 1023px) { ... }
+    
+        md: { max: "767px" },
+        // => @media (max-width: 767px) { ... }
+    
+        sm: { max: "639px" },
+        // => @media (max-width: 639px) { ... }
+    
+        xs: { max: "479px" },
+        // => @media (max-width: 479px) { ... }
     },
   },
   plugins: [],
