@@ -15,36 +15,36 @@ module.exports = {
       colors:{
         dark: "#222831",
         light: "#EEEEEE",
-        primary: "#00ADB5", // 240,86,199
-        primaryDark: "#00ADB5", // 80,230,217
+        primary: "#6F68D7", // 240,86,199
+        primaryDark: "#6F68D7", // 80,230,217
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
       },
       backgroundImage: {
         circularLight:
-        "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px)",
+        "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#EEEEEE 5px,#EEEEEE 100px)",
 
     circularDark:
-        "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 100px)",
+        "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#222831 8px,#222831 100px)",
 
     circularLightLg:
-        "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",
+        "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#EEEEEE 5px,#EEEEEE 80px)",
 
     circularDarkLg:
-        "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 80px)",
+        "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#222831 8px,#222831 80px)",
 
     circularLightMd:
-        "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 60px)",
+        "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#EEEEEE 5px,#EEEEEE 60px)",
 
     circularDarkMd:
-        "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 6px,#1b1b1b 60px)",
+        "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#222831 6px,#222831 60px)",
 
     circularLightSm:
-        "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 40px)",
+        "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#EEEEEE 5px,#EEEEEE 40px)",
 
     circularDarkSm:
-        "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 4px,#1b1b1b 40px)",
+        "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#222831 4px,#222831 40px)",
 
       }
     },
